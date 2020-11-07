@@ -1,0 +1,21 @@
+To get git bash to run in powershell do this 
+& 'C:\Program Files\Git\bin\sh.exe' --login
+
+git add. 
+git commit -m "message here" 
+
+For python venv stuff 
+
+virtualenv <venv name> #ignore the <>'s 
+
+To activate the venv
+.\BirthdayBot\Scripts\activate
+
+to create the python requirements.txt file do this when the venv is activated 
+pip freeze > requirements.txt
+
+Ran into a few issues with the connecting where the certificate filed to verify. I pulled the pem from sertigo and it seems to work. 
+https://github.com/Rapptz/discord.py/issues/4159
+https://crt.sh/?id=2835394
+
+git rm --cached FILENAME
